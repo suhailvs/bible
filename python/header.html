@@ -1,0 +1,10 @@
+{% for book in books %}
+  {% if loop.index == 40 %} <hr/> {% endif %}
+  <a href="{{loop.index}}/1.html" style="color: darkblue;"><b>{{book}}</b></a> |
+{% endfor %}
+<hr/>
+{% for chapter in chapters %}
+  <a href="{{activebook}}/{{chapter}}.html"> <b>{{chapter}}</b></a> |
+{% endfor %}
+<br/>
+<hr/>

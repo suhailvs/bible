@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Genesis 1{% endblock %}
+
+{% block content %}
+  <h2><center>{{books[activebook]}} <small>- {{chapter}}</small></center></h2>
+  <br/>
+
+  {% for verse in verses %}
+	<p><b>{{loop.index}}</b> {{verse['Verse'][:-1]}}</p>
+  {% endfor %}
+{% endblock %}

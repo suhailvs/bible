@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <!-- <link href="favicon.ico" rel="SHORTCUT ICON"/> -->
+  <title>
+   Bible: {% block title %}{% endblock %}
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="A new and unique translation of the Bible that translates to Malayalam." name="description"/>
+  <meta content="malayalam bible translation suhailvs" name="keywords"/>
+  <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" name="viewport"/>
+  
+  <style type="text/css">
+   body, html {margin:0; padding:0; border:0;} /* Re-sets IE to "zero" for these values */
+   a {text-decoration:none} a:hover {text-decoration:underline}
+   hr { border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
+  </style>
+  
+ </head>
+ <body bgcolor="FFFFFF" leftmargin="0" rightmargin="0" topmargin="0">
+  <table align="center" style="max-width:700px;">
+
+    <tr>
+     <td>
+      <center>
+      {% include 'header.html' %}
+      </center>
+      {% block content %}{% endblock %}
+      </td>
+    </tr>
+   </table>
+   
+  
+ </body>
+</html>
