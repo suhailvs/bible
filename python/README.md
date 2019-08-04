@@ -12,4 +12,5 @@
 	
 	python3 sitegenerator.py
 
-copy contents in **site** folder to root directory
+copy **site** folder to root directory
+replace **index.html** with **index.html** from site folder

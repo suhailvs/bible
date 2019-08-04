@@ -1,8 +1,8 @@
 {% extends "base.html" %}
-{% block title %}Genesis 1{% endblock %}
+{% block title %}{{books[activebook-1]}} {{chapter}}{% endblock %}
 
 {% block content %}
-  <h2><center>{{books[activebook]}} <small>- {{chapter}}</small></center></h2>
+  <h2><center>{{books[activebook-1]}} <small>- {{chapter}}</small></center></h2>
   <br/>
 
   {% for verse in verses %}
